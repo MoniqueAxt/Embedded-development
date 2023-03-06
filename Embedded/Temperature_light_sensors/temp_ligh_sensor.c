@@ -130,9 +130,9 @@ void loop()
   print_to_serial("Light: ", light_percentage, "%");
   
   lcd.print("Temperature");
-  lcd.setCursor(0,1);                           // set the cursor to col 0, row 1
-  lcd.print(temp_celsius);	                    // display the temperature on the LCD
-  lcd.print("\262C");                           // degree symbol and C
+  lcd.setCursor(0,1);                                       // set the cursor to col 0, row 1
+  lcd.print(temp_celsius);                                  // display the temperature on the LCD
+  lcd.print("\262C");                                       // degree symbol and C
 
   
   // activate a particular LED based on the dependency values
