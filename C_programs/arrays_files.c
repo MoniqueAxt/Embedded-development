@@ -22,16 +22,16 @@ void copy_string(char input[], char* copy, size_t buf_size);
 /* Main program */
 int main(int argc, char** argv) {
 	char input[MAX_SIZE] = { 0 };				// create a buffer to hold the input from console or a file (static memory)
-	char string_copy[MAX_SIZE];					// create a string to copy the input into using strcpy() function
+	char string_copy[MAX_SIZE];				// create a string to copy the input into using strcpy() function
 	char function_copy[MAX_SIZE];				// create a string to copy the input into using a custom function
 
 	// Input is from argv argument
-	if (argc > 1) {								// if there is a command line parameter, this is the input
+	if (argc > 1) {						// if there is a command line parameter, this is the input
 
 		puts("argc > 1\n");
 		size_t i;
 		for (i = 0; i < MAX_SIZE; i++) {		// copy up to MAX_SIZE characters
-			input[i] = argv[1][i];				// use the first (non-filename) parameter as the input
+			input[i] = argv[1][i];			// use the first (non-filename) parameter as the input
 		}
 
 		if (input[MAX_SIZE - 1] != '\0') {		// ensure the string has a null-terminating char
@@ -44,8 +44,8 @@ int main(int argc, char** argv) {
 		return 2;
 	}
 	// Copy the string
-	if (input != NULL) {								// execute copies if the read was successful
-		strcpy_s(string_copy, MAX_SIZE, input);			// copy the content of the input using strcpy_s (avoid buf overflow)
+	if (input != NULL) {					// execute copies if the read was successful
+		strcpy_s(string_copy, MAX_SIZE, input);		// copy the content of the input using strcpy_s (avoid buf overflow)
 		copy_string(input, function_copy, MAX_SIZE);	// copy the content of the input using a custom function
 
 		// print out the strings to console
@@ -56,11 +56,11 @@ int main(int argc, char** argv) {
 
 /* Custom function to copy a string */
 void copy_string(char input[], char* copy, size_t buf_size) {	
-	size_t i;							// counter used in the foor loop
-	for (i = 0; i < buf_size; i++) {	// iterate through each character in the string
+	size_t i;						// counter used in the foor loop
+	for (i = 0; i < buf_size; i++) {			// iterate through each character in the string
 		copy[i] = input[i];				// copy each character from the given string into the copy
 	}
-	if (copy[buf_size -1] != '\0') {	// ensure the string has a null-terminating char
+	if (copy[buf_size -1] != '\0') {			// ensure the string has a null-terminating char
 		copy[buf_size -1] = '\0';
 	}
 }
