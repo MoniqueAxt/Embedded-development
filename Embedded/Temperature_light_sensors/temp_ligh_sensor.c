@@ -14,12 +14,12 @@ The current temperature is displayed on a LCD screen.
 #define TEMPERATURE_PIN A0        // temperature sensor pin
 #define LDR_PIN A1                // light-dependent resistor pin
 
-#define RS 10					// set the LCD's Register Select pin
-#define E 9						// set the LCD's Enable pin
-#define D4 5					// set the data pin
-#define D5 4					// set the data pin
-#define D6 3					// set the data pin
-#define D7 2					// set the data pin
+#define RS 10                     // set the LCD's Register Select pin
+#define E 9                       // set the LCD's Enable pin
+#define D4 5                      // set the data pin
+#define D5 4                      // set the data pin
+#define D6 3                      // set the data pin
+#define D7 2                      // set the data pin
 
 // Set up the LCD
 LiquidCrystal lcd(RS,E, D4,D5,D6,D7);
