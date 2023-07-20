@@ -4,11 +4,11 @@ Programs written in C with extensive comment explanations in the source files.
 
 # Table of Contents
 
-[Bit packing](#bit-packing)  
-[Arrays and files](#arrays-and-files)  
-[Binary files](#binary-files)  
-[Linked List](#arrays-and-files)  
-[Caesar shift encryption](#caesar-shift-encryption)
+- [Bit packing](#bit-packing)  
+- [Arrays and files](#arrays-and-files)  
+- [Binary files](#binary-files)  
+- [Linked List](#linked-list)  
+- [Caesar shift encryption](#caesar-shift-encryption)
 
 ## Bit packing
 
